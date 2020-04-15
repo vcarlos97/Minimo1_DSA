@@ -1,6 +1,4 @@
 package edu.upc.dsa.services;
-
-
 import edu.upc.dsa.TracksManager;
 import edu.upc.dsa.TracksManagerImpl;
 import edu.upc.dsa.models.Track;
@@ -29,8 +27,6 @@ public class TracksService {
             this.tm.addTrack("Despacito", "Luis Fonsi");
             this.tm.addTrack("Enter Sandman", "Metallica");
         }
-
-
     }
 
     @GET
