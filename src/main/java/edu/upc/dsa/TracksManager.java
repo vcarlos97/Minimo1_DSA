@@ -1,7 +1,6 @@
 package edu.upc.dsa;
 
 import edu.upc.dsa.models.Track;
-
 import java.util.List;
 
 public interface TracksManager {

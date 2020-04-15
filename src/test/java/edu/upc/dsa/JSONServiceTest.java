@@ -23,4 +23,14 @@ public class JSONServiceTest {
 
     }
 
+    @Test
+    public void getVideoInJSON() throws Exception {
+
+    }
+
+    @Test
+    public void createVideoInJSON() throws Exception {
+
+    }
+
 }

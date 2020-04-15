@@ -89,4 +89,7 @@ public class TracksManagerImpl implements TracksManager {
 
         return t;
     }
+
+    public static class VideoManagerImpl {
+    }
 }
