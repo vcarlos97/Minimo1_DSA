@@ -7,16 +7,19 @@ public class Video {
     public String title;
     public String duration;
 
+    //Siempre necesitamos un constructor vacio para que Jersey funcione
     public Video(){
         this.id = RandomUtils.getId();
     }
 
     public Video(String title, String duration){
-        this();
+        this(); //Referencia al anterior constructor
         this.title=title;
         this.duration=duration;
     }
 
+
+    //Getters y setters
     public String getId() {
         return id;
     }
@@ -41,6 +44,7 @@ public class Video {
         this.duration = duration;
     }
 
+    //Método toString para obtener el JSON que enviaremos en el Request
     @Override
     public String toString() {
         return "Video [id="+id+", title=" + title + ", duration=" + duration +"]";
