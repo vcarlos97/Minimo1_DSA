@@ -8,6 +8,7 @@ import java.util.List;
 public class Usuario{
     public String id;
     public String name;
+    public List<Pedido> pedidos = null;
     private List<Product> productosComprados = null;
 
     //CONSTRUCTORES***********
@@ -18,6 +19,7 @@ public class Usuario{
         this();
         this.name=name;
         this.productosComprados=new LinkedList<>();
+        this.pedidos=new LinkedList<>();
     }
     //*****************
 
@@ -49,6 +51,15 @@ public class Usuario{
     public int getSizeListaProd(){
         return this.productosComprados.size();
     }
+
+    public List<Pedido> getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(List<Pedido> pedidos) {
+        this.pedidos = pedidos;
+    }
+
     //********************
 
     //FUNCIONES
@@ -83,7 +94,7 @@ public class Usuario{
         int cantidad = 0;
         for (Product p : this.productosComprados) {
             if (id.equals(p.getId())) {
-                cantidad++;
+                cantidad=cantidad+p.getCantidad();
             }
         }
         return cantidad;
