@@ -11,11 +11,11 @@ public class Pedido {
     public Pedido(){
     }
 
-    public Pedido(int id, Usuario usuario) {
+    public Pedido(int id, Usuario usuario, List<Product> products) {
         this();
         this.id = id;
         this.usuario = usuario;
-        this.productosPedidos = new LinkedList<>();
+        this.productosPedidos = products;
     }
 
     public int getId() {
@@ -60,4 +60,10 @@ public class Pedido {
     //USUARIO
         //LISTA PEDIDOS
             //LISTA PRODUCTOS
+
+
+    @Override
+    public String toString() {
+        return "Pedido [productos="+ productosPedidos.toString()+ ",Usuario="+usuario+"]";
+    }
 }

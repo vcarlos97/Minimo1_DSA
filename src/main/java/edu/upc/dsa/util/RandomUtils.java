@@ -11,4 +11,11 @@ public class RandomUtils {
 
         return randomString;
     }
+
+    public static int getId2() {
+        RandomStringGenerator generator = new RandomStringGenerator();
+        int randomInt = (int) Math.random();
+
+        return randomInt;
+    }
 }

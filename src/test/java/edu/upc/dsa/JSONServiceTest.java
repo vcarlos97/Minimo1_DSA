@@ -33,4 +33,34 @@ public class JSONServiceTest {
 
     }
 
+    @Test
+    public void getUserInJSON() throws Exception {
+
+    }
+
+    @Test
+    public void createUserInJSON() throws Exception {
+
+    }
+
+    @Test
+    public void getProductInJSON() throws Exception {
+
+    }
+
+    @Test
+    public void createProductInJSON() throws Exception {
+
+    }
+
+    @Test
+    public void getPedidoInJSON() throws Exception {
+
+    }
+
+    @Test
+    public void createPedidoInJSON() throws Exception {
+
+    }
+
 }

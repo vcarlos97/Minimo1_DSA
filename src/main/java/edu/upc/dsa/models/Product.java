@@ -41,5 +41,25 @@ public class Product {
     public String toString() {
         return "Producto [id="+id+", precio=" + precio +"]";
     }
+
+    public int comparePrecio(Product p) {
+        if (precio < p.precio) {
+            return -1;
+        }
+        if (precio > p.precio) {
+            return 1;
+        }
+        return 0;
+    }
+
+    public int compareVentas(Product p) {
+        if (cantidad > p.cantidad) {
+            return -1;
+        }
+        if (cantidad < p.cantidad) {
+            return 1;
+        }
+        return 0;
+    }
 }
 
